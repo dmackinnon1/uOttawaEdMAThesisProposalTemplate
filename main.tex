@@ -5,11 +5,22 @@ biblatex,
 ]{apa6}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum} %% only to generate dummy text
+\usepackage[justification=centering]{caption}
+
+%%bibliography customization
 \addbibresource{references.bib}
+\defbibheading{bibliography}[\bibname]{\section*{#1}} 
+\DeclareLanguageMapping{american}{american-apa}
+\setlength\bibitemsep{1.5\itemsep}
+
 %% specific spacing
 \geometry{margin=2.5cm}
 \linespread{1.25} %1.25 is equivalent to 1.5 MSWord spacing.
 
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+%%% author details
 \title{uOttawa Education MA Thesis Proposal Template}
 \shorttitle{MA THESIS PROPOSAL}
 \author{Dan MacKinnon}
@@ -18,9 +29,15 @@ biblatex,
 \authornote{\textit{dmack069@uottawa.ca}}
 \begin{document}
 \maketitle
-
+\nocite{*} %% just to generate full bib - remove when own citations exist
 \section{Statement of Problem}
 The student drafts a thesis proposal, whose length should not exceed 20 pages (excluding tables and list of references) using the following conventions: 1.5 line spacing; Times New Roman, 12-point font; 2.5cm margins, numbered pages and single-side printing.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.8]{uottawa_ver_black.pdf}
+\caption{This logo isn't required, it is an example of a figure}
+\end{figure}
 
 \section{Conceptual Framework}
 \lipsum[1]
@@ -45,5 +62,5 @@ This section should contain (order may vary).
 \section{Contributions to the Field of Education}
 \lipsum[4]
 
-\printbibliography
+\printbibliography[title=References]
 \end{document}
