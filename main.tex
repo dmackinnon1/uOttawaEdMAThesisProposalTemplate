@@ -9,7 +9,7 @@ biblatex,
 
 %%bibliography customization
 \addbibresource{references.bib}
-\defbibheading{bibliography}[\bibname]{\section*{#1}} 
+%\defbibheading{bibliography}[\bibname]{\section*{#1}} %uncomment to make bib heading the same as section headings
 \DeclareLanguageMapping{american}{american-apa}
 \setlength\bibitemsep{1.5\itemsep}
 
@@ -23,17 +23,22 @@ biblatex,
 %%% author details
 \title{uOttawa Education MA Thesis Proposal Template}
 \shorttitle{MA THESIS PROPOSAL}
-\author{Dan MacKinnon}
+\author{Able Student}
 \date{October 2019}
 \affiliation{University of Ottawa}
-\authornote{\textit{dmack069@uottawa.ca}}
+\authornote{\textit{foo@uottawa.ca}}
+
+\abstract{A brief summary of the proposal is provided here. Use this space to sell your proposal in a few sentences - it isn't easy to get this right.}
 \begin{document}
 \maketitle
 \nocite{*} %% just to generate full bib - remove when own citations exist
+
+
 \section{Statement of Problem}
 The student drafts a thesis proposal, whose length should not exceed 20 pages (excluding tables and list of references) using the following conventions: 1.5 line spacing; Times New Roman, 12-point font; 2.5cm margins, numbered pages and single-side printing.
 
 \begin{figure}[!ht]
+\label{fig:logo}
 \centering
 \includegraphics[scale=0.8]{uottawa_ver_black.pdf}
 \caption{This logo isn't required, it is an example of a figure}
