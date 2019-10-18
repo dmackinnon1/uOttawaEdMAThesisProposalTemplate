@@ -1,0 +1,17 @@
+%A file for the few customizations beyond apa6
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} %% only to generate dummy text
+\usepackage[justification=centering]{caption}
+
+%%bibliography customization
+\addbibresource{references.bib}
+%\defbibheading{bibliography}[\bibname]{\section*{#1}} %uncomment to make bib heading the same as section headings
+\DeclareLanguageMapping{american}{american-apa}
+\setlength\bibitemsep{1.5\itemsep}
+
+%% specific spacing
+\geometry{margin=2.5cm}
+\linespread{1.25} %1.25 is equivalent to 1.5 MSWord spacing.
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }

@@ -3,22 +3,7 @@ doc,
 biblatex,
 12pt
 ]{apa6}
-\usepackage[utf8]{inputenc}
-\usepackage{lipsum} %% only to generate dummy text
-\usepackage[justification=centering]{caption}
-
-%%bibliography customization
-\addbibresource{references.bib}
-%\defbibheading{bibliography}[\bibname]{\section*{#1}} %uncomment to make bib heading the same as section headings
-\DeclareLanguageMapping{american}{american-apa}
-\setlength\bibitemsep{1.5\itemsep}
-
-%% specific spacing
-\geometry{margin=2.5cm}
-\linespread{1.25} %1.25 is equivalent to 1.5 MSWord spacing.
-
-\usepackage{graphicx}
-\graphicspath{ {./images/} }
+\usepackage{uottawaprop}
 
 %%% author details
 \title{uOttawa Education MA Thesis Proposal Template}
@@ -31,23 +16,32 @@ biblatex,
 \abstract{A brief summary of the proposal is provided here. Use this space to sell your proposal in a few sentences - it isn't easy to get this right.}
 \begin{document}
 \maketitle
-\nocite{*} %% just to generate full bib - remove when own citations exist
-
 
 \section{Statement of Problem}
 The student drafts a thesis proposal, whose length should not exceed 20 pages (excluding tables and list of references) using the following conventions: 1.5 line spacing; Times New Roman, 12-point font; 2.5cm margins, numbered pages and single-side printing.
 
+\lipsum[1]
+
+\section{Conceptual Framework}
+You might include a diagram here, Please see Figure \ref{fig:logo}. As per APA6, when you use a figure that has been adapted or copied directly from another source, you need to reference that original source. This reference appears as a caption underneath the figure (image):
+
+\begin{APAitemize}
+\item don't include a title on top - the caption is your title
+\item concise explanation of the figure; i.e. a brief but descriptive phrase
+\item include copyright information
+\item format your caption - use italics and a capital F for Figure and sequential numbering (if you have more than one Figure)
+\end{APAitemize}
+
 \begin{figure}[!ht]
-\label{fig:logo}
 \centering
 \includegraphics[scale=0.8]{uottawa_ver_black.pdf}
 \caption{This logo isn't required, it is an example of a figure}
+\label{fig:logo}
 \end{figure}
 
-\section{Conceptual Framework}
-\lipsum[1]
-
 \section{Literature Review}
+You will likely include parenthetical references, sometimes with page numbers \parencite[p.\,12-14]{writer2109Best}, you may sometimes reference just the title of a work, like \citetitle{author2010Great}, or perhaps just the author name, like  \citeauthor{writer2109Best}. All of the cited works will automatically be added to the references section at the end.
+
 \lipsum[2]
 
 \section{Research Questions}
