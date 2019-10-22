@@ -19,3 +19,43 @@
 
 %% quotes are required
 \usepackage{csquotes}
+
+%%Redefine make title
+\newcommand{\makePropTitle}{
+\null
+\thispagestyle{empty}
+  \vskip 10em%
+  \begin{center}%
+  \let \footnote \authornote
+    {\LARGE \@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \newpage
+  \thispagestyle{empty}
+  \null
+  \vskip 8em%
+  \begin{center}%
+  {\LARGE Abstract \par}%
+  \begingroup
+    \addtolength\leftmargini{0.3in}
+    \begin{quote}
+    \@abstract
+    \end{quote}
+    \endgroup
+  \end{center}
+  \newpage
+  \pagenumbering{arabic}
+  \setcounter{page}{1}
+  \vskip 1.5em
+}
+
+
+
+
