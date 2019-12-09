@@ -59,9 +59,31 @@ This section should contain (order may vary):
 \item procedures
 \end{APAitemize}
 
+\noindent
+In this section, you might end up citing some of the software you use. This template stores that bibliographic info in a separate technology.bib file, but that is just a convention - your references can come from either references.bib or technology.bib. For example, you might use the \textbf{R} language \parencite{rCore2017} for statistical analysis. 
+
+\begin{table}[!htb]
+\centering
+\begin{tabularx}{0.39\textwidth}{@{}llr@{}} \toprule
+\multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
+Animal & Description & Price (\$)\\ \midrule
+Gnat & per gram & 13.65 \\
+& each & 0.01 \\
+Gnu & stuffed & 92.50 \\
+Emu & stuffed & 33.33 \\
+Armadillo & frozen & 8.99 \\ \bottomrule
+\end{tabularx}
+\vspace{1em}
+\caption{An example table}
+\label{table:example}
+\end{table}
+
+
+
 
 \section{Contributions to the Field of Education}
 \lipsum[4] %generates some dummy text. Lorem ipsum
 
+\linespread{1.1}
 \printbibliography[title=References]
 \end{document}

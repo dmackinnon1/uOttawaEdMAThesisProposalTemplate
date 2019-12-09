@@ -1,17 +1,20 @@
 %A file for the few customizations beyond apa6
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum} %% only to generate dummy text
-\usepackage[justification=centering]{caption}
+\usepackage{url}
 
 %%bibliography customization
 \addbibresource{references.bib}
+\addbibresource{technology.bib} %separate bib for tech
+
 %\defbibheading{bibliography}[\bibname]{\section*{#1}} %uncomment to make bib heading the same as section headings
+
 \DeclareLanguageMapping{american}{american-apa}
 \setlength\bibitemsep{1.5\itemsep}
 
 %% specific spacing
 \geometry{margin=2.5cm}
-\linespread{1.25} %1.25 is equivalent to 1.5 MSWord spacing.
+\linespread{1.45}  %1.25 is equivalent to 1.5 MSWord spacing.
 
 %% placement of images
 \usepackage{graphicx}
@@ -40,7 +43,7 @@
       \lineskip .5em%
       \begin{tabular}[t]{c}%
         \@author
-      \end{tabular}\par}%
+      \end{tabular}\par}%x
     \vskip 1em%
     {\large \@date}%
     \vskip 2em%
@@ -65,6 +68,12 @@
   \vskip 1.5em
 }
 
+%% table formatting - use booktabs
+%\usepackage{booktabs} <- already pulled in by apa6
+\renewcommand{\arraystretch}{1.2} 
+\usepackage[justification=centering]{caption} %<-already pulled in by apa6, but somehow not centered
+\usepackage{tabularx}
+\usepackage{ragged2e}
 
 
 
