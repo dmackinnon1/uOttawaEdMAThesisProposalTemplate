@@ -16,3 +16,5 @@ This document will include the following elements:
 - a relevant and exhaustive list of references.
 
 The order in which these elements are presented may vary.
+
+This template was created in order to submit a thesis proposal to the Faculty of Education at UOttawa in the 2020 academic year.
